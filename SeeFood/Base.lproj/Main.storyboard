@@ -39,6 +39,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cameraButton" destination="nyO-do-bH6" id="gv7-Bo-GQc"/>
                         <outlet property="imageView" destination="jn5-jG-fRL" id="vCk-3F-Ljv"/>
                     </connections>
                 </viewController>
