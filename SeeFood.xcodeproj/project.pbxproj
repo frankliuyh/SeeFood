@@ -13,9 +13,11 @@
 		4D129A41211E7A12003E8C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D129A40211E7A12003E8C5D /* Assets.xcassets */; };
 		4D129A44211E7A12003E8C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D129A42211E7A12003E8C5D /* LaunchScreen.storyboard */; };
 		4D129A4C211E7AD9003E8C5D /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D129A4B211E7AD9003E8C5D /* Inceptionv3.mlmodel */; };
+		87F2A010838E7C7A2AE81621 /* Pods_SeeFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485526BB5627EA39AD085478 /* Pods_SeeFood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485526BB5627EA39AD085478 /* Pods_SeeFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeeFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D129A36211E7A11003E8C5D /* SeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D129A39211E7A11003E8C5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D129A3B211E7A11003E8C5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4D129A43211E7A12003E8C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D129A45211E7A12003E8C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D129A4B211E7AD9003E8C5D /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		A3DA6E4DB3686E7097AF202B /* Pods-SeeFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeeFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeeFood/Pods-SeeFood.release.xcconfig"; sourceTree = "<group>"; };
+		E15420D5E1A4EE937EBFABB9 /* Pods-SeeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeeFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeeFood/Pods-SeeFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F2A010838E7C7A2AE81621 /* Pods_SeeFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281A8912B312EC2134A1011E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E15420D5E1A4EE937EBFABB9 /* Pods-SeeFood.debug.xcconfig */,
+				A3DA6E4DB3686E7097AF202B /* Pods-SeeFood.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4D129A2D211E7A11003E8C5D = {
 			isa = PBXGroup;
 			children = (
 				4D129A38211E7A11003E8C5D /* SeeFood */,
 				4D129A37211E7A11003E8C5D /* Products */,
+				281A8912B312EC2134A1011E /* Pods */,
+				D8CD61A3EE59F799AFC5382A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = SeeFood;
 			sourceTree = "<group>";
 		};
+		D8CD61A3EE59F799AFC5382A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				485526BB5627EA39AD085478 /* Pods_SeeFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D129A48211E7A12003E8C5D /* Build configuration list for PBXNativeTarget "SeeFood" */;
 			buildPhases = (
+				E8AD55B479C8E1406B71C058 /* [CP] Check Pods Manifest.lock */,
 				4D129A32211E7A11003E8C5D /* Sources */,
 				4D129A33211E7A11003E8C5D /* Frameworks */,
 				4D129A34211E7A11003E8C5D /* Resources */,
+				A5D80296AB30B7348715EC09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5D80296AB30B7348715EC09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SeeFood/Pods-SeeFood-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeeFood/Pods-SeeFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8AD55B479C8E1406B71C058 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeeFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D129A32211E7A11003E8C5D /* Sources */ = {
@@ -282,6 +347,7 @@
 		};
 		4D129A49211E7A12003E8C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15420D5E1A4EE937EBFABB9 /* Pods-SeeFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +366,7 @@
 		};
 		4D129A4A211E7A12003E8C5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3DA6E4DB3686E7097AF202B /* Pods-SeeFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
